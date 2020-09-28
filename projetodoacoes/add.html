@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Doações</title>
+
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+     <span class="sr-only"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Weverton Santos de Almeida</a>
+   </div>
+  </div>
+ </nav>
+ 
+ <div id="main" class="container-fluid">
+  
+  <h3 class="page-header">Adicionar Doação</h3>
+  
+  	<div class="row">
+  	  <div class="form-group col-md-4">
+  	  	<label for="exampleInputEmail1">Nome completo</label>
+  	  	<input type="text" class="form-control" id="exampleInputEmail1" name="nome" placeholder="Digite o valor">
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">CPF</label>
+  	  	<input type="text" class="form-control" id="exampleInputEmail1" name="cpf" placeholder="Digite o valor">
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Data de nascimento</label>
+  	  	<input type="date" class="form-control" id="exampleInputEmail1" name="dtnascimento" placeholder="Digite o valor">
+  	  </div>
+	</div>
+	
+	<div class="row">
+  	  <div class="form-group col-md-4">
+  	  	<label for="exampleInputEmail1">E-mail</label>
+  	  	<input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Digite o valor">
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Celular</label>
+  	  	<input type="text" class="form-control" id="exampleInputEmail1" name="celular" placeholder="Digite o valor">
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Telefone fixo</label>
+  	  	<input type="text" class="form-control" id="exampleInputEmail1" name="fixo" placeholder="Digite o valor">
+  	  </div>
+	</div>
+	
+	<div class="row">
+	  <div class="form-group col-md-6">
+  	  	<label for="exampleInputEmail1">Endereço completo</label>
+  	  	<input type="text" class="form-control" id="exampleInputEmail1" name="endereco" placeholder="Digite o valor">
+  	  </div>
+	</div>
+	
+	<div class="row">
+  	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Intervalo de doação</label>
+  	  	<select class="form-control" id="exampleInputEmail1" name="intervalo">
+			<option>Selecione...</option> 
+			<option value="unico">Único</option>
+			<option value="bimestral">Bimestral</option>
+			<option value="semestral">Semestral</option>
+			<option value="anual">Anual</option>
+		</select>
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Valor</label>
+  	  	<input type="text" class="form-control" id="exampleInputEmail1" name="valor" placeholder="Digite o valor">
+  	  </div>
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Forma de pagamento</label>
+		<select class="form-control" id="exampleInputEmail1" name="forma-pagamento">
+	
+		</select>
+  	  </div>
+	</div>
+	<div class="row">
+	  <div class="form-group col-md-3">
+  	  	<label for="exampleInputEmail1">Data de cadastro</label>
+  	  	<input type="date" class="form-control" id="exampleInputEmail1" name="dtcadastro" placeholder="Digite o valor">
+  	  </div>
+	</div>
+	
+	<hr />
+	
+	<div class="row">
+	  <div class="col-md-12">
+	  	<button type="submit" id="btnSalvar" class="btn btn-primary">Salvar</button>
+		<a href="index.html" class="btn btn-default">Cancelar</a>
+	  </div>
+	</div>
+
+  </form>
+ </div>
+ 
+
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="controller.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+ <script>	
+	$("input[name=celular]").mask("(00) 00000-0000");
+	$("input[name=fixo]").mask("(00) 0000-0000");
+	$("input[name=cpf]").mask("000.000.000-00");
+	$('input[name=email]').mask("A", {
+		translation: {
+			"A": { pattern: /[\w@\-.+]/, recursive: true }
+		}
+	});
+	$('input[name=valor'#.##0,00', {reverse: true});
+	
+ </script>
+</body>
+</html>
